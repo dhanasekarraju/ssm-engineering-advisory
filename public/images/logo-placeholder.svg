@@ -1,0 +1,7 @@
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="60" rx="8" fill="#1a2634"/>
+  <rect x="2" y="2" width="176" height="56" rx="6" fill="#ffb81c"/>
+  <text x="20" y="38" fill="#ffb81c">SSM</text>
+  <text x="70" y="38" fill="white">ENGINEERING</text>
+  <text x="70" y="52" fill="#ffb81c">PROJECT ADVISORY</text>
+</svg>
