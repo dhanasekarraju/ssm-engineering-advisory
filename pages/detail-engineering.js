@@ -185,14 +185,6 @@ export default function DetailEngineering() {
           </div>
         </nav>
 
-        {/* Page Header */}
-        <section className="bg-primary text-white py-16">
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Detail Engineering Design</h1>
-            <p className="text-xl text-accent">Comprehensive Design Solutions for Complex Projects</p>
-          </div>
-        </section>
-
       {/* Hero Section */}
       <section className="relative h-[300px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/80">

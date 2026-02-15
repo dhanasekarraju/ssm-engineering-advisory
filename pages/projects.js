@@ -164,14 +164,6 @@ export default function Projects() {
           </div>
         </nav>
 
-        {/* Page Header */}
-        <section className="bg-primary text-white py-16">
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
-            <p className="text-xl text-accent">Delivering Engineering Excellence Across Industries</p>
-          </div>
-        </section>
-
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <div className="absolute inset-0">

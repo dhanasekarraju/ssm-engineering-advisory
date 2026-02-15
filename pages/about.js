@@ -95,11 +95,23 @@ export default function About() {
           </div>
         </nav>
 
-        {/* Page Header */}
-        <section className="bg-primary text-white py-16">
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
-            <p className="text-xl text-accent">SSM ENGINEERING & PROJECT ADVISORY</p>
+        {/* Hero Section */}
+        <section className="relative h-[400px] overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Services"
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
+          </div>
+          <div className="relative container-custom h-full flex items-center">
+            <div className="text-white max-w-3xl animate-fadeInLeft">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4">About Us</h1>
+              <p className="text-xl text-accent">SSM ENGINEERING & PROJECT ADVISORY</p>
+            </div>
           </div>
         </section>
 
