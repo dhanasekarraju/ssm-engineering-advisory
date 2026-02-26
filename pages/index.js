@@ -7,13 +7,6 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [logoError, setLogoError] = useState(false);
 
-  // Professional engineering/construction images from free APIs
-  const heroImages = [
-    "https://images.unsplash.com/photo-1541976590-713941681591?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-  ];
-
   return (
       <>
         <Head>
@@ -22,15 +15,14 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
-        {/* Navigation with glass morphism effect */}
+        {/* Navigation */}
         <nav className="bg-primary/95 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
           <div className="container-custom py-3">
             <div className="flex justify-between items-center">
-              {/* Logo + Company Name - UPDATED */}
+              {/* Logo + Company Name */}
               <Link href="/" className="flex items-center group">
                 {!logoError ? (
                     <div className="flex items-center space-x-3">
-                      {/* Logo Container */}
                       <div className="relative h-16 w-16 md:h-20 md:w-20 flex-shrink-0">
                         <Image
                             src="/images/ssm-logo.jpg"
@@ -42,39 +34,36 @@ export default function Home() {
                             sizes="(max-width: 768px) 64px, 80px"
                         />
                       </div>
-
-                      {/* Company Name - NEW */}
                       <div className="flex flex-col">
-                    <span className="text-accent font-bold text-lg md:text-xl lg:text-2xl leading-tight">
-                      SSM ENGINEERING
-                    </span>
+                        <span className="text-accent font-bold text-lg md:text-xl lg:text-2xl leading-tight">
+                          SSM ENGINEERING
+                        </span>
                         <span className="text-white text-xs md:text-sm lg:text-base opacity-90">
-                      & PROJECT ADVISORY
-                    </span>
+                          & PROJECT ADVISORY
+                        </span>
                       </div>
                     </div>
                 ) : (
-                    /* Fallback Text Logo - Only text if image fails */
                     <div className="flex flex-col">
-                  <span className="text-accent font-bold text-lg md:text-xl lg:text-2xl leading-tight">
-                    SSM ENGINEERING
-                  </span>
+                      <span className="text-accent font-bold text-lg md:text-xl lg:text-2xl leading-tight">
+                        SSM ENGINEERING
+                      </span>
                       <span className="text-white text-xs md:text-sm lg:text-base opacity-90">
-                    & PROJECT ADVISORY
-                  </span>
+                        & PROJECT ADVISORY
+                      </span>
                     </div>
                 )}
               </Link>
 
               {/* Desktop Menu */}
               <div className="hidden md:flex space-x-6 lg:space-x-8">
-                <Link href="/" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">Home</Link>
-                <Link href="/about" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">About</Link>
-                <Link href="/services" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">Services</Link>
-                <Link href="/team" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">Team</Link>
-                <Link href="/projects" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">Projects</Link>
-                <Link href="/detail-engineering" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">Detail Design</Link>
-                <Link href="/contact" className="text-white hover:text-accent transition font-medium text-sm lg:text-base">Contact</Link>
+                <Link href="/" className="text-white hover:text-accent transition font-medium">Home</Link>
+                <Link href="/about" className="text-white hover:text-accent transition font-medium">About</Link>
+                <Link href="/services" className="text-white hover:text-accent transition font-medium">Services</Link>
+                <Link href="/team" className="text-white hover:text-accent transition font-medium">Team</Link>
+                <Link href="/projects" className="text-white hover:text-accent transition font-medium">Projects</Link>
+                <Link href="/detail-engineering" className="text-white hover:text-accent transition font-medium">Detail Design</Link>
+                <Link href="/contact" className="text-white hover:text-accent transition font-medium">Contact</Link>
               </div>
 
               {/* Mobile Menu Button */}
@@ -107,26 +96,33 @@ export default function Home() {
           </div>
         </nav>
 
-        {/* Rest of your page content remains exactly the same... */}
-        {/* Hero Section */}
+        {/* Hero Section with VIDEO Background */}
         <section className="relative h-[600px] md:h-[700px] overflow-hidden">
+          {/* Video Background */}
           <div className="absolute inset-0">
-            <div className="relative w-full h-full">
-              <Image
-                  src="https://images.unsplash.com/photo-1541976590-713941681591?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-                  alt="Engineering background"
-                  fill
-                  className="object-cover"
-                  priority
-              />
-            </div>
+            <video
+                className="absolute inset-0 w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster="/images/hero/hero-poster.jpg" // Optional: fallback image while video loads
+            >
+              <source src="/videos/hero-video.mp4" type="video/mp4" />
+              {/* Add WebM format for better browser support */}
+              <source src="/videos/hero-video.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+            {/* Dark Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
           </div>
+
+          {/* Hero Content */}
           <div className="relative container-custom h-full flex items-center">
             <div className="text-white max-w-3xl animate-fadeIn">
-            <span className="bg-accent text-primary px-4 py-2 rounded-full text-sm font-bold inline-block mb-6">
-              INTEGRATED ENGINEERING & PROJECT ADVISORY
-            </span>
+      <span className="bg-accent text-primary px-4 py-2 rounded-full text-sm font-bold inline-block mb-6">
+        INTEGRATED ENGINEERING & PROJECT ADVISORY
+      </span>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Building Tomorrow's<br />
                 <span className="text-accent">Infrastructure Today</span>
@@ -140,6 +136,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Scroll Indicator */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
               <div className="w-1 h-2 bg-white rounded-full mt-2 animate-pulse"></div>
@@ -166,13 +164,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Company Overview */}
+        {/* Company Overview with YOUR image */}
         <section className="py-20">
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="/images/doc-image.jpg" // CHANGE THIS
                     alt="Engineering team"
                     fill
                     className="object-cover hover:scale-105 transition duration-700"
@@ -207,7 +205,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Section */}
+        {/* Services Section with YOUR images */}
         <section className="py-20 bg-gray-50">
           <div className="container-custom">
             <div className="text-center mb-12">
@@ -219,7 +217,7 @@ export default function Home() {
                 {
                   title: "EPCM Services",
                   desc: "Independent oversight, governance, risk management, and performance control across diverse sectors.",
-                  icon: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  icon: "/images/epcm.jpg"
                 },
                 {
                   title: "Project Management",
@@ -260,7 +258,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Mission & Vision */}
+        {/* Mission & Vision with YOUR background */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0">
             <Image
@@ -292,7 +290,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Projects */}
+        {/* Featured Projects with YOUR images */}
         <section className="py-20">
           <div className="container-custom">
             <div className="text-center mb-12">
@@ -304,17 +302,17 @@ export default function Home() {
                 {
                   title: "Michelin Tyres - Mixing Plant",
                   location: "Chennai",
-                  image: "https://images.unsplash.com/photo-1565008447742-97f6e38e985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  image: "/images/michelin.jpg" // CHANGE THIS
                 },
                 {
                   title: "Commercial High Rise",
                   location: "Salem",
-                  image: "https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  image: "/images/commercial.jpg" // CHANGE THIS
                 },
                 {
                   title: "Industrial Warehouse",
                   location: "Hyderabad",
-                  image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  image: "/images/silo.jpg"
                 }
               ].map((project, i) => (
                   <div key={i} className="group relative h-80 rounded-xl overflow-hidden shadow-xl">

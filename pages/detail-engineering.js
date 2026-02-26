@@ -16,7 +16,7 @@ export default function DetailEngineering() {
       location: "Chennai",
       category: "Industrial",
       description: "Complete detailed engineering design for mixing plant facility including structural design and detailing.",
-      image: null, // You'll add image path later
+      image: "/images/michelin.jpg", // You'll add image path later
       placeholder: "🏭"
     },
     {
@@ -26,7 +26,7 @@ export default function DetailEngineering() {
       location: "Hyderabad",
       category: "FMCG",
       description: "Detailed engineering design for ice cream production facility with cold storage integration.",
-      image: null,
+      image: "/images/HatsunHydrabad.jpg",
       placeholder: "🍦"
     },
     {
@@ -36,7 +36,7 @@ export default function DetailEngineering() {
       location: "Sri City Tada",
       category: "FMCG",
       description: "Comprehensive design and detailing for chocolate production facility.",
-      image: null,
+      image: "/images/Chocolate Plant.webp",
       placeholder: "🍫"
     },
     {
@@ -46,7 +46,7 @@ export default function DetailEngineering() {
       location: "Chennai",
       category: "Warehousing",
       description: "Detailed engineering for large-scale frozen storage facility with temperature-controlled zones.",
-      image: null,
+      image: "/images/FrozenStorageWarehouse.jpg",
       placeholder: "❄️"
     },
     {
@@ -56,7 +56,7 @@ export default function DetailEngineering() {
       location: "Chennai",
       category: "Technology",
       description: "Complete structural and architectural design for state-of-the-art data center facility.",
-      image: null,
+      image: "/images/Nxtra.avif",
       placeholder: "💻"
     },
     {
@@ -66,7 +66,7 @@ export default function DetailEngineering() {
       location: "Mumbai",
       category: "Commercial",
       description: "Detailed engineering design for premium commercial complex.",
-      image: null,
+      image: "/images/Mumbai.jpg",
       placeholder: "🏢"
     },
     {
@@ -76,7 +76,7 @@ export default function DetailEngineering() {
       location: "Chennai",
       category: "Warehousing",
       description: "Expansion and detailed design for additional frozen storage capacity.",
-      image: null,
+      image: "/images/FrozenStorage.jpg",
       placeholder: "❄️"
     },
     {
@@ -86,7 +86,7 @@ export default function DetailEngineering() {
       location: "Bengaluru",
       category: "Pharmaceutical",
       description: "Detailed engineering design for biopharmaceutical manufacturing facility.",
-      image: null,
+      image: "/images/Biocon.jpg",
       placeholder: "🔬"
     }
   ];

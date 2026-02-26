@@ -20,7 +20,7 @@ export default function Projects() {
       structures: "TURBINE GENERATOR DECK & STRUCTURES BUILDING, BOILER BUILDING, CHIMNEY, SUB STATION",
       dimensions: { length: 60, width: 25, height: 27 },
       cost: "₹ 70 MILLION",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      image: "/images/thermal.jpg"
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ export default function Projects() {
       structures: "PIPE RACK FOR REFINERY INDUSTRY, POLYMER PRODUCTION BUILDING",
       dimensions: { length: 100, width: 37, height: 42 },
       cost: "₹ 270 MILLION",
-      image: "https://images.unsplash.com/photo-1565008447742-97f6e38e985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      image: "/images/petrochemicals.jpg"
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export default function Projects() {
       structures: "SILO BUILDING FOR TYRE FACTORY, CHOCOLATE PRODUCTION FACTORY",
       dimensions: { length: 126, width: 36, height: 14 },
       cost: "₹ 1,000 MILLION",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      image: "/images/silo.jpg"
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ export default function Projects() {
       structures: "RCC FRAMED STRUCTURE WITH 3 FLOORS OF BASEMENT & 11 FLOORS",
       dimensions: { length: 30, width: 30, height: "3 basements + 11 floors" },
       cost: "₹ 400 MILLION",
-      image: "https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      image: "/images/commercial.jpg"
     },
     {
       id: 5,
@@ -68,7 +68,7 @@ export default function Projects() {
       structures: "DAIRY & BEVERAGES PRODUCTS PRODUCTION FACTORY, COLD ROOM WAREHOUSE",
       dimensions: { length: 100, width: 90, height: 21 },
       cost: "₹ 3,500 MILLION",
-      image: "https://images.unsplash.com/photo-1528323276657-9836f33b49f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      image: "/images/dairybevarges.jpg"
     }
   ];
 

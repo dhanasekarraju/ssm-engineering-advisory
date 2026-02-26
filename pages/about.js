@@ -99,7 +99,7 @@ export default function About() {
         <section className="relative h-[400px] overflow-hidden">
           <div className="absolute inset-0">
             <Image
-                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                src="/images/about us.jpg"
                 alt="Services"
                 fill
                 className="object-cover"
