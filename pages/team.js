@@ -55,60 +55,51 @@ export default function Team() {
           <title>Our Team - SSM ENGINEERING & PROJECT ADVISORY</title>
         </Head>
 
-        {/* Navigation - Same structure but with Team active */}
-        <nav className="bg-primary/95 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
-          <div className="container-custom py-3">
+        {/* Navigation */}
+        <nav className="bg-white shadow-lg sticky top-0 z-50">
+          <div className="container-custom py-1 md:py-2">
             <div className="flex justify-between items-center">
-              {/* Logo + Company Name (same code) */}
+              {/* Logo */}
               <Link href="/" className="flex items-center group">
                 {!logoError ? (
-                    <div className="flex items-center space-x-3">
-                      <div className="relative h-16 w-16 md:h-20 md:w-20 flex-shrink-0">
-                        <Image
-                            src="/images/ssm-logo.jpg"
-                            alt="SSM ENGINEERING"
-                            fill
-                            className="object-contain"
-                            priority
-                            onError={() => setLogoError(true)}
-                            sizes="(max-width: 768px) 64px, 80px"
-                        />
-                      </div>
-                      <div className="flex flex-col">
-                    <span className="text-accent font-bold text-lg md:text-xl lg:text-2xl leading-tight">
-                      SSM ENGINEERING
-                    </span>
-                        <span className="text-white text-xs md:text-sm lg:text-base opacity-90">
-                      & PROJECT ADVISORY
-                    </span>
-                      </div>
+                    <div className="relative h-14 md:h-16 lg:h-20 w-auto -my-1 md:-my-2">
+                      <Image
+                          src="/images/ssm-logo.png"
+                          alt="SSM ENGINEERING"
+                          width={0}
+                          height={0}
+                          sizes="(max-width: 768px) 140px, 180px"
+                          style={{ width: 'auto', height: '100%' }}
+                          priority
+                          onError={() => setLogoError(true)}
+                      />
                     </div>
                 ) : (
                     <div className="flex flex-col">
-                  <span className="text-accent font-bold text-lg md:text-xl lg:text-2xl leading-tight">
-                    SSM ENGINEERING
-                  </span>
-                      <span className="text-white text-xs md:text-sm lg:text-base opacity-90">
-                    & PROJECT ADVISORY
-                  </span>
+            <span className="text-primary font-bold text-lg md:text-xl lg:text-2xl leading-tight">
+              SSM ENGINEERING
+            </span>
+                      <span className="text-gray-600 text-xs md:text-sm">
+              & PROJECT ADVISORY
+            </span>
                     </div>
                 )}
               </Link>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex space-x-6 lg:space-x-8">
-                <Link href="/" className="text-white hover:text-accent transition font-medium">Home</Link>
-                <Link href="/about" className="text-white hover:text-accent transition font-medium">About</Link>
-                <Link href="/services" className="text-white hover:text-accent transition font-medium">Services</Link>
-                <Link href="/team" className="text-accent transition font-medium">Team</Link>
-                <Link href="/projects" className="text-white hover:text-accent transition font-medium">Projects</Link>
-                <Link href="/detail-engineering" className="text-white hover:text-accent transition font-medium">Detail Design</Link>
-                <Link href="/contact" className="text-white hover:text-accent transition font-medium">Contact</Link>
+              <div className="hidden md:flex space-x-4 lg:space-x-6 items-center">
+                <Link href="/" className="text-primary hover:text-accent transition font-medium">Home</Link>
+                <Link href="/about" className="text-primary hover:text-accent transition font-medium">About</Link>
+                <Link href="/services" className="text-primary hover:text-accent transition font-medium">Services</Link>
+                <Link href="/team" className="text-primary hover:text-accent transition font-medium">Team</Link>
+                <Link href="/projects" className="text-primary hover:text-accent transition font-medium">Projects</Link>
+                <Link href="/detail-engineering" className="text-primary hover:text-accent transition font-medium">Detail Design</Link>
+                <Link href="/contact" className="text-primary hover:text-accent transition font-medium">Contact</Link>
               </div>
 
               {/* Mobile Menu Button */}
               <button
-                  className="md:hidden text-white"
+                  className="md:hidden text-primary"
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,14 +114,14 @@ export default function Team() {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden mt-4 pb-4 space-y-3 bg-primary/90 rounded-lg p-4">
-                  <Link href="/" className="block text-white hover:text-accent transition py-2">Home</Link>
-                  <Link href="/about" className="block text-white hover:text-accent transition py-2">About</Link>
-                  <Link href="/services" className="block text-white hover:text-accent transition py-2">Services</Link>
-                  <Link href="/team" className="block text-accent transition py-2">Team</Link>
-                  <Link href="/projects" className="block text-white hover:text-accent transition py-2">Projects</Link>
-                  <Link href="/detail-engineering" className="block text-white hover:text-accent transition py-2">Detail Design</Link>
-                  <Link href="/contact" className="block text-white hover:text-accent transition py-2">Contact</Link>
+                <div className="md:hidden mt-2 pb-2 space-y-2 bg-white rounded-lg shadow-xl p-3 border">
+                  <Link href="/" className="block text-primary hover:text-accent transition py-1">Home</Link>
+                  <Link href="/about" className="block text-primary hover:text-accent transition py-1">About</Link>
+                  <Link href="/services" className="block text-primary hover:text-accent transition py-1">Services</Link>
+                  <Link href="/team" className="block text-primary hover:text-accent transition py-1">Team</Link>
+                  <Link href="/projects" className="block text-primary hover:text-accent transition py-1">Projects</Link>
+                  <Link href="/detail-engineering" className="block text-primary hover:text-accent transition py-1">Detail Design</Link>
+                  <Link href="/contact" className="block text-primary hover:text-accent transition py-1">Contact</Link>
                 </div>
             )}
           </div>
