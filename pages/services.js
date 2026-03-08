@@ -99,7 +99,6 @@ export default function Services() {
                 <Link href="/services" className="text-primary hover:text-accent transition font-medium">Services</Link>
                 <Link href="/team" className="text-primary hover:text-accent transition font-medium">Team</Link>
                 <Link href="/projects" className="text-primary hover:text-accent transition font-medium">Projects</Link>
-                <Link href="/detail-engineering" className="text-primary hover:text-accent transition font-medium">Detail Design</Link>
                 <Link href="/contact" className="text-primary hover:text-accent transition font-medium">Contact</Link>
               </div>
 
@@ -126,7 +125,6 @@ export default function Services() {
                   <Link href="/services" className="block text-primary hover:text-accent transition py-1">Services</Link>
                   <Link href="/team" className="block text-primary hover:text-accent transition py-1">Team</Link>
                   <Link href="/projects" className="block text-primary hover:text-accent transition py-1">Projects</Link>
-                  <Link href="/detail-engineering" className="block text-primary hover:text-accent transition py-1">Detail Design</Link>
                   <Link href="/contact" className="block text-primary hover:text-accent transition py-1">Contact</Link>
                 </div>
             )}
