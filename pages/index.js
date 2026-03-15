@@ -147,7 +147,7 @@ export default function Home() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                         {[
                             {number: "150+", label: "Projects Completed"},
-                            {number: "25+", label: "Years Experience"},
+                            {number: "15+", label: "Years Experience"},
                             {number: "13+", label: "Expert Engineers"},
                             {number: "100%", label: "Client Satisfaction"}
                         ].map((stat, i) => (
@@ -170,7 +170,7 @@ export default function Home() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/doc-image.jpg"
+                                src="/images/advFirm.avif"
                                 alt="Engineering team"
                                 fill
                                 className="object-cover hover:scale-105 transition duration-700"

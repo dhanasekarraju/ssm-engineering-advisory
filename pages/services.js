@@ -8,6 +8,13 @@ export default function Services() {
   const [logoError, setLogoError] = useState(false);
 
   const services = [
+
+    {
+          title: "Feed",
+          description: "Comprehensive analysis of project viability, including technical, financial, and environmental assessments.",
+          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+          features: ["Technical Assessment", "Financial Analysis", "Environmental Impact", "Risk Evaluation"]
+    },
     {
       title: "EPCM Services",
       description: "Independent oversight, governance, risk management, and performance control across diverse sectors. We provide end-to-end engineering, procurement, and construction management solutions.",
@@ -15,16 +22,17 @@ export default function Services() {
       features: ["Project Governance", "Risk Management", "Performance Control", "Quality Assurance"]
     },
     {
-      title: "Project Management",
-      description: "End-to-end project delivery with rigorous methodologies and data-driven controls. We ensure predictable outcomes in cost, schedule, and quality.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Cost Control", "Schedule Management", "Quality Assurance", "Stakeholder Communication"]
-    },
-    {
       title: "Engineering Design",
       description: "Multidisciplinary expertise delivering innovative and efficient design solutions for complex infrastructure projects.",
       image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       features: ["Structural Design", "Civil Engineering", "Architectural Design", "MEP Coordination"]
+    },
+
+    {
+      title: "Procurement Advisory",
+      description: "Strategic procurement support including vendor selection, contract management, and supply chain optimization.",
+      image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: ["Vendor Selection", "Contract Management", "Supply Chain", "Cost Optimization"]
     },
     {
       title: "Construction Management",
@@ -33,16 +41,10 @@ export default function Services() {
       features: ["Site Supervision", "Safety Management", "Quality Control", "Progress Monitoring"]
     },
     {
-      title: "Feasibility Studies",
-      description: "Comprehensive analysis of project viability, including technical, financial, and environmental assessments.",
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Technical Assessment", "Financial Analysis", "Environmental Impact", "Risk Evaluation"]
-    },
-    {
-      title: "Procurement Advisory",
-      description: "Strategic procurement support including vendor selection, contract management, and supply chain optimization.",
-      image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      features: ["Vendor Selection", "Contract Management", "Supply Chain", "Cost Optimization"]
+      title: "Project Management",
+      description: "End-to-end project delivery with rigorous methodologies and data-driven controls. We ensure predictable outcomes in cost, schedule, and quality.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      features: ["Cost Control", "Schedule Management", "Quality Assurance", "Stakeholder Communication"]
     }
   ];
 

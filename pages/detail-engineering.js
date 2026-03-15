@@ -70,16 +70,6 @@ export default function DetailEngineering() {
       placeholder: "🏢"
     },
     {
-      id: 7,
-      title: "Mega Frozen Storage",
-      client: "M/s. Mega Frozen",
-      location: "Chennai",
-      category: "Warehousing",
-      description: "Expansion and detailed design for additional frozen storage capacity.",
-      image: "/images/FrozenStorage.jpg",
-      placeholder: "❄️"
-    },
-    {
       id: 8,
       title: "Biocon Facility",
       client: "M/s. Biocon",

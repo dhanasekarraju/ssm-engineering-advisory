@@ -177,7 +177,7 @@ export default function Projects() {
       structures: "Commercial complex",
       dimensions: { length: "Various", width: "Various", height: "Various" }
     },
-    {
+    /*{
       id: 107,
       title: "Mega Frozen Storage",
       name: "Mega Frozen Storage",
@@ -191,9 +191,9 @@ export default function Projects() {
       cost: "Confidential",
       structures: "Frozen storage expansion",
       dimensions: { length: "Various", width: "Various", height: "Various" }
-    },
+    },*/
     {
-      id: 108,
+      id: 107,
       title: "Biocon Facility",
       name: "Biocon Facility",
       client: "M/s. Biocon",

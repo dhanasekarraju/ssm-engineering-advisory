@@ -153,7 +153,7 @@ export default function Contact() {
                     </div>
                     <div className="ml-4">
                       <h3 className="font-bold text-primary text-lg">Email</h3>
-                      <p className="text-gray-600">senthemzurugan@gmail.com</p>
+                      <p className="text-gray-600">info@ssmengpa.in</p>
                     </div>
                   </div>
 
@@ -296,7 +296,7 @@ export default function Contact() {
                 <div className="text-4xl mb-4 animate-float-slow">📧</div>
                 <h3 className="font-bold text-primary text-xl mb-2">Quick Response</h3>
                 <p className="text-gray-600">Email us anytime</p>
-                <p className="text-accent font-bold text-xl mt-2">senthemzurugan@gmail.com</p>
+                <p className="text-accent font-bold text-xl mt-2">info@ssmengpa.in</p>
                 <p className="text-xs text-gray-400 mt-2">We reply within 24 hours</p>
               </div>
             </div>
