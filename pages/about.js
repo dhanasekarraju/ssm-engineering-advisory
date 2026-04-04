@@ -205,7 +205,7 @@ export default function About() {
             <div>
               <h4 className="text-accent font-bold text-xl mb-4">Contact</h4>
               <p className="text-gray-300">Head Office: Velachery, Chennai - 600 042</p>
-              <p className="text-gray-300">Email: senthemzurugan@gmail.com</p>
+              <p className="text-gray-300">Email: info@ssmengpa.in</p>
               <p className="text-gray-300">Mobile: 97909 93232</p>
             </div>
             <div>

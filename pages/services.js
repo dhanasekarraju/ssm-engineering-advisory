@@ -283,7 +283,7 @@ export default function Services() {
               <h4 className="text-accent font-bold text-xl mb-4">Contact</h4>
               <ul className="space-y-3 text-gray-300">
                 <li>Head Office: Velachery, Chennai - 600 042</li>
-                <li>Email: senthemzurugan@gmail.com</li>
+                <li>Email: info@ssmengpa.in</li>
                 <li>Mobile: 97909 93232</li>
               </ul>
             </div>
